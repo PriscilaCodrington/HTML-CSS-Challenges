@@ -1,12 +1,18 @@
 * {
   font-family: sans-serif;
+  
 }
-
+body{
+  margin: 0px;
+  
+}
 header {
   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
-  padding: 20px;
+  padding: 50px 20px 20px 50px;
+  margin: 0px;
+ 
 }
 
 nav {
@@ -43,6 +49,8 @@ h5 {
   margin-bottom: 1em;
 }
 
+
+
 h1 {
   font-size: 250%;
 }
@@ -76,8 +84,12 @@ footer {
 }
 
 .introduction {
+  background-color: #ffffff;
 }
-
+.introduction p{
+   word-spacing: 2px;
+   line-height: 2;
+}
 #badge {
   height: 120px;
   width: 120px;
@@ -102,30 +114,48 @@ footer {
   text-align: center;
   font-size: 125%;
 }
-
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container img:nth-child(1) {
+  border: 5px solid pink;
 }
+.image-container img:nth-child(2) { 
+  border: 5px solid violet;
+}
+.image-container img:nth-child(3) { 
+  border: 5px solid aqua;
+}
+
 
 .tigers {
   background-color: #0b3c49;
-  color: #f0e100;
+  color: #F0E100;
+
+}
+.tigers h2{
+  color: #9EEAFF ;
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2, h3 {
+  color: #F4743B;
 }
 
+/*.giraffe p:first-of-type {
+  font-size: 20px;
+}*/
+.giraffe p:nth-child(2){
+  font-size: 20px;
+}
+.news h2{
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -166,19 +196,32 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 60px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
 }
+.education-container button{
+  font-size: 20px;
+}
 
+.education-container button:hover{
+  background-color: #8075ff;
+}
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
 }
+
+.membership p{
+  width: 700px;
+  margin: 0 auto;
+}
+
 
 .membership h2 {
   color: #ff3f00;
@@ -191,5 +234,12 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+}
+
+
+/*My corrections*/
+
+#logo{
+  border: none;
 }
